@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 60rem;
+  grid-auto-rows: minmax(0, auto); /* Adjust the min and max height as needed */
+}
+
+.statCard {
+  padding: 0.5rem 1rem !important;
+  display: flex;
+  justify-content: center;
+}
+
+.graphSpaccing {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.gridRowSpan2 {
+  grid-row: span 2;
+}
+
+.gridColumnSpan2 {
+  grid-column: span 2;
+}
+
+/* For the above medium screens */
+@media (max-width: 1112px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*For the small devices */
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

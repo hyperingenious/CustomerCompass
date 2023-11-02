@@ -1,0 +1,24 @@
+.root {
+    padding:0 !important;
+  }
+  
+  .value {
+    font-size: 1.2rem !important;
+    font-weight: bolder !important;
+    line-height: 1 !important;
+  }
+  
+  .diff {
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center!important;
+  }
+  
+  .icon {
+    color: light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-3)) !important;
+  }
+  
+  .title {
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+  }

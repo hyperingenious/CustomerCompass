@@ -1,0 +1,19 @@
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 0;
+  width: 100%;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  border-radius: 2px;
+}
+
+@media (width < 600px) {
+  .square {
+    width: 13px;
+    height: 13px;
+  }
+}
