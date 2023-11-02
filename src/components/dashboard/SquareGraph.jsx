@@ -6,18 +6,18 @@ import { setInitialState } from "../../redux/dashboard/filterSquareGraphSlice";
 
 const squareColor = [
   "#101010",
-  "#072516",
-  "#0e4429",
-  "#006d32",
-  "#26a641",
-  "#39d353",
+  "rgb(29 62 45)",
+  "rgb(49 106 77)",
+  "rgb(70 150 109)",
+  "rgb(90 200 144)",
+  "rgb(112 255 182)",
 ];
 const displaySquareColor = [
-  "#072516",
-  "#0e4429",
-  "#006d32",
-  "#26a641",
-  "#39d353",
+  "rgb(29 62 45)",
+  "rgb(49 106 77)",
+  "rgb(70 150 109)",
+  "rgb(90 200 144)",
+  "rgb(112 255 182)",
 ];
 
 function SquareGraph({ reviewData }) {
