@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
   const [credentials, setCredentials] = useState({
-    email: "",
-    password: "",
+    email: "test@gmail.com",
+    password: "123456",
   });
 
   const { authenticated, status, isError } = useSelector((store) => store.auth);
@@ -37,11 +37,6 @@ export default function SignUp() {
 
   useEffect(
     function () {
-      // if (isError) {
-      //   toast.error(isError);
-      //   return;
-      // }
-
       if (authenticated) navigate("/dashboard");
     },
     [isError, authenticated, navigate]

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 
 import { useDisclosure } from "@mantine/hooks";
-import { AppShell as MantineAppShell, Burger } from "@mantine/core";
+import { AppShell as MantineAppShell, Burger, Text } from "@mantine/core";
 
 import NavbarSimple from "../components/ui/NavbarSimple";
 import ActionToggle from "../components/ui/ActionToggle";
@@ -43,7 +43,7 @@ export default function AppShell() {
           }}
         >
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <p>CUSTOMER COMPASS</p>
+          <Text size="xs" fw={"normal"} >CUSTOMER COMPASS</Text>
           <ActionToggle />
         </MantineAppShell.Header>
 

@@ -159,7 +159,6 @@ function LineGraphFilterBar({
 }
 
 function CustomTooltip({ _, payload, label }) {
-  console.log(payload);
   return (
     <Card padding="xs" radius="sm" withBorder>
       <Label label={label} />

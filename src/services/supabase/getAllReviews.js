@@ -5,7 +5,6 @@ export async function getAllReviewsAndVisitorsCount() {
     const { data: reviews, reviewError } = await supabase
       .from("Reviews Table")
       .select("*");
-
     if (reviewError) throw new Error(reviewError);
 
     const { data: views, visitorsError } = await supabase
@@ -13,7 +12,9 @@ export async function getAllReviewsAndVisitorsCount() {
       .select("*")
       .eq("id", 1);
 
-    if (visitorsError) throw new Error(visitorsError);
+    if (visitorsError) {
+      throw new Error(visitorsError);
+    }
 
     const [{ visitors }] = views;
 
