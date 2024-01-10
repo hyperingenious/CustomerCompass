@@ -1,8 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getLast5Month } from "../../helpers/helper";
-
-const initialState = {
-  allData: null,
+import { getLast5Month } from "../../helpers/helper"ata: null,
   last5Months: getLast5Month(),
   selectedMonthIndex: 0,
   selectedMonthData: null,
